@@ -1,0 +1,11 @@
+---
+title:  "Welcome to my blog!"
+tags: [personal]
+---
+Welcome to my blog created with [Jekyll][jekyll].
+The site is based on [Jekyll-uno theme][jekyll-uno] with a few modifications.
+
+Develoment still on progress
+
+[jekyll]:      http://jekyllrb.com
+[jekyll-uno]:   http://jekyllthemes.org/themes/jekyll-uno/
