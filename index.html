@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script><script src="assets/icon.js"></script>
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jeonghwan Kim</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link rel="icon" type="image/png" href="assets/"> -->
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J19VDQYCK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1J19VDQYCK');
+  </script>
+
+</head>
+<body>
+
+  <!-- MENU
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <div class="container"> -->
+    <!-- <div class="row u-full-width"  style="margin-top: 3%"> -->
+      <!-- Profile photo -->
+
+      <!-- Self-introduction -->
+      <!-- <div class="eight columns" style="margin-top: 10px"> -->
+        <!-- <ul style="list-style-type: none; margin: 0; padding: 0;"> -->
+          <!-- <li style="display: inline;"><a href="default.asp">Home</a></li> -->
+          <!-- <li style="display: inline;"><a href="default.asp">Home</a></li> -->
+          <!-- <li><a href="news.asp">News</a></li> -->
+          <!-- <li><a href="contact.asp">Contact</a></li> -->
+          <!-- <li><a href="about.asp">About</a></li> -->
+        <!-- </ul> -->
+      <!-- </div> -->
+
+    <!-- </div> -->
+  <!-- </div> -->
+
+
+  <!-- Personal Info
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <br>
+    <div class="row"  style="margin-top: 4%">
+      <div class="three columns">
+        <!-- Profile photo
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <img src="assets/img/photo.jpg" style="width:200px; border-radius: 50%;" alt="profile photo"><br>
+        <!-- Name
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <h5 style="text-align: center;">Jeonghwan Kim</h5>
+        <!-- <h6 style="margin-top: -3px; text-align: center;">@GeorgiaTech</h6> -->
+        <!-- Social links
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="social">
+          <a href="assets/pdfs/CV.pdf" class="iico" ></a>
+          <p class="image-text-button" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" >
+        </div>
+        <div id="demail"></div> <!-- will reveal email -->
+      </div>
+
+      <div class="nine columns" style="margin-top: 5%;">
+        <p style="text-align:justify;">
+          <!-- Self-introduction
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+          I'm a Masters student (ECE and Math) in Georgia Tech advised by
+          <a href="https://www.cc.gatech.edu/~sha9/" style="text-decoration: none;">Dr. Sehoon Ha</a><br>
+          I received my Bacheler's degree at Seoul National University, majoring in Electrical and Computer Enginering.<br>
+          I am interested in robotics control, powered by intersection of reinforcement learning, modern control, and computer animation.
+          I am currently working on fast simulation of quadrupedal robots with trajectory optimization and computer animation.</p>
+          <!-- 
+          –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <strong>Competences:</strong>
+        <a>python</a>,
+        <a>pytorch</a>,
+        <a>pybullet</a>,
+        <a>iGibson</a>,
+        <a>OpenCV</a>,
+        <a>numpy</a>,
+        <a>Tensorflow</a>,
+        <a>C/C++</a>,
+        <a>ROS</a>,
+        <a>docker</a> -->
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Publications
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <br><div class="div_line"></div><br>
+    <h5><u>Publications</u></h5>
+
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <img src="assets/img/autorigging.gif" style="width:300px;">
+      </div>
+      <div class="eight columns">
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">Auto-rigging 3D Bipedal Characters in Arbitrary Poses</div>
+        <!-- AUTHORS + VENUE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <br><em><strong>Jeonghwan Kim</strong>, Hyeontae Son, Jinseok Bae, Young Min Kim </em>
+        <br><em>EUROGRAPHICS short paper 2021</em>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+          We train neural network that performs rigs and skinning of a 3D model based on their mesh and volumetric data.
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="https://diglib.eg.org/handle/10.2312/egs20211023">[pdf]</a>
+        <a href="https://github.com/whitealex95/autorigging-bipedal">[code]</a>
+      </div>
+    </div>
+
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <img src="assets/img/gca.gif" style="width:300px;">
+      </div>
+      <div class="eight columns">
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">Learning to generate 3D shapes with Generative Cellular Automata</div>
+        <!-- AUTHORS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <br><em>Dongsu Zhang, Changwoon Choi, <strong>Jeonghwan Kim</strong>, Young Min Kim</em>
+        <br><em>The IEEE International Conference on Robotics and Automation (ICRA) 2021</em>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+        We train a generative 3D Cellular Automata that can generate and complete 3D data represented in Voxels.
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="https://openreview.net/forum?id=rABUmU3ulQh">[pdf]</a>
+        <a href="http://github.com/96lives/gca">[code]</a>
+
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Projects
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <br><div class="div_line"></div><br>
+    <h5><u>Projects</u></h5>
+
+    <!-- PROJECT ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <img src="assets/img/mapfo.gif" style="width:300px; ">
+      </div>
+      <div class="eight columns">
+        <!-- NEW TAG
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">Implementation of PPO for Multi-Agent Path Finding with Dynamic Obstacles</div>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+          Efficient multi-agent path finding algorithm is essential for reducing cost when deploying robots to logoistics warehouses.
+          In this project, we train a Multi Agent variant of Proximal Policy Optimization(PPO) algorithm for multi agent path finding with dynamic obstacles.<br>
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="assets/pdfs/MAPF_RLR.pdf">[pdf]</a>
+      </div>
+    </div>
+
+
+    <!-- PROJECT ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <img src="assets/img/Figure2_c.svg" style="width:300px; height:180px;">
+      </div>
+      <div class="eight columns">
+        <!-- NEW TAG
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">Stabilizing Controllers with Root Based Polynomial Regression</div>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+          We propose a novel method of stabilizing classical controllers via techniques from machine learning.
+          We use Polynomial Root Kernel(PRK) and Polynomial Root Gradients(PRG) to trained neural network to generate both discrete and continuous controllers satisfying root criterion stability.
+          We successfully generated stabilizing feed-back controllers and parallel feed-forward compensator(PFC) along with unique application to Belgian chocolate problem.
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <a href="pages/prgprk.html">[short-summary]</a> -->
+
+      </div>
+    </div>
+
+    <!-- PROJECT ENTRY ###
+      FETCHIT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <img src="assets/img/figure03.png" style="width:200px;display:block;margin:auto;">
+      </div>
+      <div class="eight columns">
+        <!-- NEW TAG
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">Design and Control of Scalable Magnetic Levitation System with Deep Reinforcement Learning</div>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+          We Model 3DoF levitating magnetic ball with 2D plane of electro magnets on MATLAB/Simulink.
+          The three dimensional positional control of the levitating object was done via Deep Deterministic Policy Gradient (DDPG) algorithm.
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="assets/pdfs/DeepRL_Report.pdf">[pdf]</a>
+      </div>
+    </div>
+  </div>
+
+<br>
+<!-- Teaching
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <br><div class="div_line"></div><br>
+    <h5><u>Teaching Experience</u></h5>
+    <br>
+    <strong>CS4496/7496 Computer Animation</strong>
+    <ul>
+      <li>FALL 2022 - Graduate Teaching Assistant </li>
+    </ul>
+    <strong>CS3451 Computer Graphics</strong>
+    <ul>
+      <li>Spring 2023 - Graduate Teaching Assistant </li>
+    </ul>
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- attempt hiding from spambots :p - snippet credits Andrej Karpathy - karpathy.ai source code -->
+<script type="text/javascript">
+  var e_is_shown = false;
+  document.getElementById('iemail').addEventListener("click", function(){
+    let demail = document.getElementById('demail');
+    demail.innerHTML = 'jkim' + '3662' + ' _a' + 't_ ' + 'gatech' + '.' + 'e' + 'du';
+    demail.style.opacity = e_is_shown ? 0 : 1;
+    e_is_shown = !e_is_shown;
+  })
+</script>
+
+
+<!-- ### FOOTER ### -->
+
+<div class="div_line"></div><br>
+
+<p style="color:gray; text-align:center; font-size: small;">
+  The site is generated using template from <a href="https://github.com/initmaks/initmaks.github.io">Maks Sorokin</a><br>
+</p>
+
+</body>
+</html>
