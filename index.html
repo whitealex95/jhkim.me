@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script><script src="assets/icon.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<!-- <script src="assets/icon.js"></script> -->
 <head>
 
   <!-- Basic Page Needs
@@ -9,6 +10,7 @@
   <title>Jeonghwan Kim</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -22,10 +24,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link rel="icon" type="image/png" href="assets/"> -->
+
+  <!-- Page Setups
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <base target="_blank">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2Q4X6K9S6"></script>
@@ -66,10 +73,14 @@
   <div class="container">
     <br>
     <div class="row"  style="margin-top: 4%">
+      <div class="one columns"></div>
       <div class="three columns">
         <!-- Profile photo
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <img src="assets/img/photo.jpg" style="width:200px; border-radius: 50%;" alt="profile photo"><br>
+        <div style="text-align: center;">
+          <img src="assets/img/photo.jpg" class="profile-photo" alt="profile photo"><br>
+        </div>
+
         <!-- Name
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <h5 style="text-align: center;">Jeonghwan Kim</h5>
@@ -77,10 +88,10 @@
         <!-- Social links
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div id="social">
-          <a href="assets/pdfs/CV.pdf" style="color: #000000; text-decoration: none;"><span>[CV]</span></a>
-          <a href="https://github.com/whitealex95" style="color: #000000; text-decoration: none;">[Github]</a>
+          <a href="assets/pdfs/CV_JeonghwanKim_2023_04_17_A4.pdf" style="color: #000000; text-decoration: none;" target="_blank"><span>[CV]</span></a>
+          <a href="https://github.com/whitealex95" style="color: #000000; text-decoration: none;" target="_blank">[Github]</a>
           <!-- <img src="assets/icons/mail.png" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" /> -->
-          <span style="cursor: pointer;" class="iico" id="iemail" title="click to reveal">
+          <span style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" ">
             [Email]
           </span>
           <!-- <a href="assets/pdfs/CV.pdf"><img src="assets/icons/file.png" class="iico" /></a>
@@ -90,15 +101,20 @@
         <div id="demail"></div> <!-- will reveal email -->
       </div>
 
-      <div class="nine columns" style="margin-top: 5%;">
+      <div class="eight columns" style="margin-top: 5%;">
         <p style="text-align:justify;">
           <!-- Self-introduction
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          I'm a Masters student (ECE and Math) in Georgia Tech advised by
+          &nbsp; I'm a MS student (ECE and Math) in Georgia Tech advised by
           <a href="https://www.cc.gatech.edu/~sha9/" style="text-decoration: none;">Dr. Sehoon Ha</a>. 
           I received my Bacheler's degree at Seoul National University, majoring in Electrical and Computer Enginering. 
-          I am interested in robotics control, powered by intersection of reinforcement learning, modern control, and computer animation. 
-          I am currently working on fast simulation of quadrupedal robots with trajectory optimization and computer animation.</p>
+          <br>
+          &nbsp; My goal is to deploy agile motion planning and control algorithms to enable robot-robot and human-robot interaction.
+          To achieve this, I am focusing on creating various types of motions, realized by optimal trackers that utilize reinforcement learning and modern control techniques.
+          I believe that this approach will lead to more effective interactive control in the field of robotics.
+        
+
+        </p>
           <!-- 
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <!-- <strong>Competences:</strong>
@@ -131,7 +147,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/ARMP.gif" style="width:300px;">
+        <div class="video-container">
+          <img src="assets/img/ARMP.gif">
+        </div>
       </div>
       <div class="eight columns">
         <!-- TITLE
@@ -161,7 +179,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/autorigging.gif" style="width:300px;">
+        <div class="video-container">
+          <img src="assets/img/autorigging.gif">
+        </div>
       </div>
       <div class="eight columns">
         <!-- TITLE
@@ -190,8 +210,10 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/gca.gif" style="width:300px;">
-      </div>
+        <div class="video-container">
+          <img src="assets/img/gca.gif">
+          </div>
+        </div>
       <div class="eight columns">
         <!-- TITLE
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -227,7 +249,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/mapfo.gif" style="width:300px; ">
+        <div class="video-container">
+          <img src="assets/img/mapfo.gif">
+        </div>
       </div>
       <div class="eight columns">
         <!-- NEW TAG
@@ -255,7 +279,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/Figure2_c.svg" style="width:300px; height:180px;">
+        <div class="video-container">
+          <img src="assets/img/Figure2_c.svg">
+        </div>
       </div>
       <div class="eight columns">
         <!-- NEW TAG
@@ -285,12 +311,13 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/figure03.png" style="width:200px;display:block;margin:auto;">
+        <div class="video-container">
+          <img src="assets/img/figure03.png">
+        </div>
       </div>
       <div class="eight columns">
         <!-- NEW TAG
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
         <!-- TITLE
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div id="project_title">Design and Control of Scalable Magnetic Levitation System with Deep Reinforcement Learning</div>
@@ -313,8 +340,12 @@
   <div class="container">
     <br><div class="div_line"></div><br>
     <h5><u>Teaching Experience</u></h5>
-    <br>
+    
     <strong>CS4496/7496 Computer Animation</strong>
+    <br>
+    <a href="https://anim1.kano.moe" style="text-decoration: none;"><span>[Spline Visualizer]</span></a>
+    <a href="https://anim2.kano.moe" style="text-decoration: none;"><span>[Vector Field Visualizer]</span></a>
+    <br>
     <ul>
       <li>FALL 2022 - Graduate Teaching Assistant </li>
     </ul>

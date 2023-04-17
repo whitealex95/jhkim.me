@@ -1,0 +1,31 @@
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+.profile-photo {
+  width: 80%;
+  border-radius: 50%;
+  margin-top: 15px;
+  max-width: 220px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  /* 16:9 aspect ratio */
+  /* padding-bottom: 56.25%; */
+  /* custom ratio */
+  padding-bottom: 85.0%;
+}
+
+.video-container video,
+.video-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
