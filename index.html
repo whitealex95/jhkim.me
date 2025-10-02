@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script><script src="assets/icon.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+<!-- <script src="assets/icon.js"></script> -->
 <head>
 
   <!-- Basic Page Needs
@@ -9,6 +10,7 @@
   <title>Jeonghwan Kim</title>
   <meta name="description" content="">
   <meta name="author" content="">
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -22,19 +24,24 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- <link rel="icon" type="image/png" href="assets/"> -->
 
+  <!-- Page Setups
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <base target="_blank">
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1J19VDQYCK"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2Q4X6K9S6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-1J19VDQYCK');
+    gtag('config', 'G-K2Q4X6K9S6');
   </script>
 
 </head>
@@ -66,10 +73,14 @@
   <div class="container">
     <br>
     <div class="row"  style="margin-top: 4%">
+      <div class="one columns"></div>
       <div class="three columns">
         <!-- Profile photo
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <img src="assets/img/photo.jpg" style="width:200px; border-radius: 50%;" alt="profile photo"><br>
+        <div style="text-align: center;">
+          <img src="assets/img/photo.jpg" class="profile-photo" alt="profile photo"><br>
+        </div>
+
         <!-- Name
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <h5 style="text-align: center;">Jeonghwan Kim</h5>
@@ -77,21 +88,31 @@
         <!-- Social links
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div id="social">
-          <a href="assets/pdfs/CV.pdf" class="iico" ></a>
-          <p class="image-text-button" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" >
+          <a href="assets/pdfs/CV_JeonghwanKim.pdf" style="color: #000000; text-decoration: none;" target="_blank"><span>[CV]</span></a>
+          <a href="https://github.com/whitealex95" style="color: #000000; text-decoration: none;" target="_blank">[Github]</a>
+          <!-- <img src="assets/icons/mail.png" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" /> -->
+          <span style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" ">
+            [Email]
+          </span>
+          <!-- <a href="assets/pdfs/CV.pdf"><img src="assets/icons/file.png" class="iico" /></a>
+          <a href="https://github.com/whitealex95"><img src="assets/icons/github.png" class="iico" /></a>
+          <img src="assets/icons/mail.png" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" /> -->
         </div>
         <div id="demail"></div> <!-- will reveal email -->
       </div>
 
-      <div class="nine columns" style="margin-top: 5%;">
+      <div class="eight columns" style="margin-top: 5%;">
         <p style="text-align:justify;">
           <!-- Self-introduction
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-          I'm a Masters student (ECE and Math) in Georgia Tech advised by
-          <a href="https://www.cc.gatech.edu/~sha9/" style="text-decoration: none;">Dr. Sehoon Ha</a><br>
-          I received my Bacheler's degree at Seoul National University, majoring in Electrical and Computer Enginering.<br>
-          I am interested in robotics control, powered by intersection of reinforcement learning, modern control, and computer animation.
-          I am currently working on fast simulation of quadrupedal robots with trajectory optimization and computer animation.</p>
+          &nbsp; I'm a Robotics PhD student at Georgia Tech, advised by 
+          <a href="https://www.cc.gatech.edu/~sha9/" style="text-decoration: none;">Dr. Sehoon Ha</a>. 
+          I received my Master's degrees in ECE and Math from Georgia Tech, and my Bachelor's degree from Seoul National University, majoring in Electrical and Computer Engineering. 
+          <br>
+          &nbsp; 
+          I love working on robot learning, computer animation, and ML-based control.
+          My goal is to develop algorithms that enable robots to seamlessly interact in everyday environments.
+        </p>
           <!-- 
           –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <!-- <strong>Competences:</strong>
@@ -116,7 +137,69 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <br><div class="div_line"></div><br>
-    <h5><u>Publications</u></h5>
+    <h5>Publications</h5>
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <div class="video-container">
+          <img src="assets/img/ARMP.gif">
+        </div>
+      </div>
+      <div class="eight columns">
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">ARMP: Autoregressive Motion Planning for Quadruped Locomotion and Navigation in Complex Indoor Environments</div>
+        <!-- AUTHORS + VENUE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <br><em><strong>Jeonghwan Kim</strong>, Tianyu Li, Sehoon Ha </em>
+        <br><em>IROS 2023</em>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+          We present a data-driven motion planner that autoregressively generates locomotion trjaectories for complex indoor navigation scenarios.
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="https://armp.jhkim.me">Project Page</a> / 
+        <!-- <a href="#">[code]</a> -->
+        <a href="https://drive.google.com/file/d/1__pozplGm8xSr6yv7qEDEwMOSuE9kTJ0/view?usp=sharing">Video</a>
+      </div>
+    </div>
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row" id="project_entry">
+      <!-- MEDIA SECTION
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="four columns">
+        <div class="video-container">
+          <img src="assets/img/ACE.jpg">
+        </div>
+      </div>
+      <div class="eight columns">
+        <!-- TITLE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div id="project_title">ACE: Adversarial Correspondence Embedding for Cross Morphology Motion Retargeting from Human to Nonhuman Characters</div>
+        <!-- AUTHORS + VENUE
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <br><em>Tianyu Li, Jungdam Won, Alexander Clegg, <strong>Jeonghwan Kim,</strong> Akshara Rai, Sehoon Ha</em>
+        <br><em>SIGGRAPH ASIA 2023</em>
+        <!-- DESCRIPTION
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p id="project_info">
+        </p>
+          <!-- LINKS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <a href="https://easypapersniper.github.io/projects/ACE/index.html">Project Page</a> / 
+        <!-- <a href="#">[code]</a> -->
+        <a href="https://easypapersniper.github.io/projects/ACE/ACE_paper.pdf">Paper</a> / 
+        <a href="https://www.youtube.com/watch?v=JsNrhVRkIb8&ab_channel=EasyPaperSniper">Video</a>
+      </div>
+    </div>
 
 
     <!-- PUBLICATION ENTRY ###
@@ -125,7 +208,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/autorigging.gif" style="width:300px;">
+        <div class="video-container">
+          <img src="assets/img/autorigging.gif">
+        </div>
       </div>
       <div class="eight columns">
         <!-- TITLE
@@ -142,8 +227,8 @@
         </p>
           <!-- LINKS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="https://diglib.eg.org/handle/10.2312/egs20211023">[pdf]</a>
-        <a href="https://github.com/whitealex95/autorigging-bipedal">[code]</a>
+        <a href="https://diglib.eg.org/handle/10.2312/egs20211023">PDF</a> / 
+        <a href="https://github.com/whitealex95/autorigging-bipedal">Code</a>
       </div>
     </div>
 
@@ -154,8 +239,10 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/gca.gif" style="width:300px;">
-      </div>
+        <div class="video-container">
+          <img src="assets/img/gca.gif">
+          </div>
+        </div>
       <div class="eight columns">
         <!-- TITLE
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -163,7 +250,7 @@
         <!-- AUTHORS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <br><em>Dongsu Zhang, Changwoon Choi, <strong>Jeonghwan Kim</strong>, Young Min Kim</em>
-        <br><em>The IEEE International Conference on Robotics and Automation (ICRA) 2021</em>
+        <br><em>International Conference on Learning Representations (ICLR) 2021</em>
         <!-- DESCRIPTION
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <p id="project_info">
@@ -171,8 +258,8 @@
         </p>
           <!-- LINKS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="https://openreview.net/forum?id=rABUmU3ulQh">[pdf]</a>
-        <a href="http://github.com/96lives/gca">[code]</a>
+        <a href="https://openreview.net/forum?id=rABUmU3ulQh">PDF</a> / 
+        <a href="http://github.com/96lives/gca">Code</a>
 
       </div>
     </div>
@@ -183,7 +270,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <br><div class="div_line"></div><br>
-    <h5><u>Projects</u></h5>
+    <h5>Projects</h5>
 
     <!-- PROJECT ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -191,7 +278,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/mapfo.gif" style="width:300px; ">
+        <div class="video-container">
+          <img src="assets/img/mapfo.gif">
+        </div>
       </div>
       <div class="eight columns">
         <!-- NEW TAG
@@ -208,7 +297,7 @@
         </p>
           <!-- LINKS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="assets/pdfs/MAPF_RLR.pdf">[pdf]</a>
+        <a href="assets/pdfs/MAPF_RLR.pdf">PDF</a>
       </div>
     </div>
 
@@ -219,7 +308,9 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/Figure2_c.svg" style="width:300px; height:180px;">
+        <div class="video-container">
+          <img src="assets/img/Figure2_c.svg">
+        </div>
       </div>
       <div class="eight columns">
         <!-- NEW TAG
@@ -249,12 +340,13 @@
       <!-- MEDIA SECTION
       –––––––––––––––––––––––––––––––––––––––––––––––––– -->
       <div class="four columns">
-        <img src="assets/img/figure03.png" style="width:200px;display:block;margin:auto;">
+        <div class="video-container">
+          <img src="assets/img/figure03.png">
+        </div>
       </div>
       <div class="eight columns">
         <!-- NEW TAG
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
         <!-- TITLE
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <div id="project_title">Design and Control of Scalable Magnetic Levitation System with Deep Reinforcement Learning</div>
@@ -266,7 +358,7 @@
         </p>
           <!-- LINKS
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="assets/pdfs/DeepRL_Report.pdf">[pdf]</a>
+        <a href="assets/pdfs/DeepRL_Report.pdf">PDF</a>
       </div>
     </div>
   </div>
@@ -276,9 +368,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <br><div class="div_line"></div><br>
-    <h5><u>Teaching Experience</u></h5>
-    <br>
+    <h5>Teaching Experience</h5>
+    
     <strong>CS4496/7496 Computer Animation</strong>
+    <br>
+    <a href="https://anim1.jhkim.me" style="text-decoration: none;"><span>[Spline Visualizer]</span></a>
+    <a href="https://anim2.jhkim.me" style="text-decoration: none;"><span>[Vector Field Visualizer]</span></a>
+    <br>
     <ul>
       <li>FALL 2022 - Graduate Teaching Assistant </li>
     </ul>
