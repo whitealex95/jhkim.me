@@ -14,10 +14,8 @@ a {
   position: relative;
   width: 100%;
   height: 0;
-  /* 16:9 aspect ratio */
-  /* padding-bottom: 56.25%; */
-  /* custom ratio */
-  padding-bottom: 85.0%;
+  /* 16:9 HD aspect ratio */
+  padding-bottom: 56.25%;
 }
 
 .video-container video,
@@ -28,4 +26,18 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.video-row {
+  margin-bottom: 40px;
+}
+
+.project_title {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+.venue {
+  color: #606060;
 }

@@ -90,6 +90,7 @@
         <div id="social">
           <a href="assets/pdfs/CV_JeonghwanKim.pdf" style="color: #000000; text-decoration: none;" target="_blank"><span>[CV]</span></a>
           <a href="https://github.com/whitealex95" style="color: #000000; text-decoration: none;" target="_blank">[Github]</a>
+          <a href="https://scholar.google.com/citations?user=va_bbDoAAAAJ&hl=en" style="color: #000000; text-decoration: none;" target="_blank">[Scholar]</a>
           <!-- <img src="assets/icons/mail.png" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" /> -->
           <span style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" ">
             [Email]
@@ -133,6 +134,38 @@
     </div>
   </div>
 
+  <!-- Experience
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <br><div class="div_line"></div><br>
+    <h5>Experience</h5>
+    
+    <div class="row" style="margin-bottom: 30px;">
+      <!-- Georgia Tech -->
+      <div class="six columns">
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <img src="assets/img/GeorgiaTech.png" alt="Georgia Tech" style="width: 80px; height: 80px; object-fit: contain;">
+          <div>
+            <strong>PhD in Robotics</strong><br>
+            <span style="color: #666;">Georgia Tech</span><br>
+            <span style="color: #999; font-size: 0.9em;">2023 - Present</span>
+          </div>
+        </div>
+      </div>
+      <!-- RAI Institute -->
+      <div class="six columns">
+        <div style="display: flex; align-items: center; gap: 20px;">
+          <img src="assets/img/rai.png" alt="RAI Institute" style="width: 80px; height: 80px; object-fit: contain;">
+          <div>
+            <strong>Research Intern</strong><br>
+            <span style="color: #666;">RAI Institute</span><br>
+            <span style="color: #999; font-size: 0.9em;">2024.09 - 2025.04</span>
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div>
+
   <!-- Publications
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
@@ -141,127 +174,180 @@
 
     <!-- PUBLICATION ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
+        <div class="video-container">
+          <img src="assets/img/umv_flip_merged.gif">
+        </div>
+      </div>
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Flip Stunts on Bike-Like Robots using Iterative Motion Imitation</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em><strong>Jeonghwan Kim</strong>, Shamel Fahmi, <strong>Seungeun Rho</strong>, Sehoon Ha, Gabriel Nelson</em>
+        <br><em>Under Review</em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p class="project_info">
+          Work done during internship at the <a href="https://rai-inst.com/" style="text-decoration: none;">RAI Institute</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
+        <div class="video-container">
+          <img src="assets/img/kooploco.png">
+        </div>
+      </div>
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Safe Navigation of Bipedal Robots via Koopman Operator-Based Model Predictive Control</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em><strong>Jeonghwan Kim</strong>, Yunhai Han, Harish Ravichandar, Sehoon Ha</em>
+        <br><em>Under Review</em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="https://jhkim.me/kooploco/">[Project Page]</a>
+          <a href="https://arxiv.org/abs/2409.14736">[Arxiv]</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
+        <div class="video-container">
+          <video autoplay="" loop="" muted="" src="assets/video/Switch4EAI_short.mp4" type="video/mp4" controls></video>
+        </div>
+      </div>
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Switch4EAI: Leveraging Console Game Platform for Benchmarking Robotic Athletics</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em>Tianyu Li, <strong>Jeonghwan Kim</strong>, Wontaek Kim, Donghoon Baek, Seungeun Rho, Sehoon Ha</em>
+        <br><em><span class="venue">CoRL Open-Source Hardware Workshop 2025</span></em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="https://easypapersniper.github.io/projects/Switch4EAI/Switch4EAI.html">[Project]</a>
+          <a href="https://arxiv.org/abs/2508.13444">[Arxiv]</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- PUBLICATION ENTRY ###
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
           <img src="assets/img/ARMP.gif">
         </div>
       </div>
-      <div class="eight columns">
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">ARMP: Autoregressive Motion Planning for Quadruped Locomotion and Navigation in Complex Indoor Environments</div>
-        <!-- AUTHORS + VENUE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <br><em><strong>Jeonghwan Kim</strong>, Tianyu Li, Sehoon Ha </em>
-        <br><em>IROS 2023</em>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">ARMP: Autoregressive Motion Planning for Quadruped Locomotion and Navigation in Complex Indoor Environments</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em><strong>Jeonghwan Kim</strong>, Tianyu Li, Sehoon Ha</em>
+        <br><em><span class="venue">IROS 2023</span></em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <p class="project_info">
           We present a data-driven motion planner that autoregressively generates locomotion trajectories for complex indoor navigation scenarios.
+        </p> -->
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="https://jhkim.me/armp">[Project]</a>
+          <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10341389">[Paper]</a>
+          <a href="https://drive.google.com/file/d/1__pozplGm8xSr6yv7qEDEwMOSuE9kTJ0/view?usp=sharing">[Video]</a>
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="https://jhkim.me/armp">Project Page</a> / 
-        <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10341389">Paper</a> / 
-        <!-- <a href="#">[code]</a> -->
-        <a href="https://drive.google.com/file/d/1__pozplGm8xSr6yv7qEDEwMOSuE9kTJ0/view?usp=sharing">Video</a>
       </div>
     </div>
 
     <!-- PUBLICATION ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
-          <img src="assets/img/ACE.jpg">
+          <video autoplay="" loop="" muted="" src="assets/video/ACE.mp4" type="video/mp4" controls></video>
         </div>
       </div>
-      <div class="eight columns">
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">ACE: Adversarial Correspondence Embedding for Cross Morphology Motion Retargeting from Human to Nonhuman Characters</div>
-        <!-- AUTHORS + VENUE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <br><em>Tianyu Li, Jungdam Won, Alexander Clegg, <strong>Jeonghwan Kim,</strong> Akshara Rai, Sehoon Ha</em>
-        <br><em>SIGGRAPH ASIA 2023</em>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">ACE: Adversarial Correspondence Embedding for Cross Morphology Motion Retargeting from Human to Nonhuman Characters</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em>Tianyu Li, Jungdam Won, Alexander Clegg, <strong>Jeonghwan Kim</strong>, Akshara Rai, Sehoon Ha</em>
+        <br><em><span class="venue">SIGGRAPH ASIA 2023</span></em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="https://easypapersniper.github.io/projects/ACE/index.html">[Project]</a>
+          <a href="https://easypapersniper.github.io/projects/ACE/ACE_paper.pdf">[Paper]</a>
+          <a href="https://www.youtube.com/watch?v=JsNrhVRkIb8&ab_channel=EasyPaperSniper">[Video]</a>
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="https://easypapersniper.github.io/projects/ACE/index.html">Project Page</a> / 
-        <!-- <a href="#">[code]</a> -->
-        <a href="https://easypapersniper.github.io/projects/ACE/ACE_paper.pdf">Paper</a> / 
-        <a href="https://www.youtube.com/watch?v=JsNrhVRkIb8&ab_channel=EasyPaperSniper">Video</a>
       </div>
     </div>
 
 
     <!-- PUBLICATION ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
           <img src="assets/img/autorigging.gif">
         </div>
       </div>
-      <div class="eight columns">
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">Auto-rigging 3D Bipedal Characters in Arbitrary Poses</div>
-        <!-- AUTHORS + VENUE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <br><em><strong>Jeonghwan Kim</strong>, Hyeontae Son, Jinseok Bae, Young Min Kim </em>
-        <br><em>EUROGRAPHICS short paper 2021</em>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
-          We train neural network that performs rigs and skinning of a 3D model based on their mesh and volumetric data.
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Auto-rigging 3D Bipedal Characters in Arbitrary Poses</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em><strong>Jeonghwan Kim</strong>, Hyeontae Son, Jinseok Bae, Young Min Kim</em>
+        <br><em><span class="venue">EUROGRAPHICS Short Paper 2021</span></em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <p class="project_info">
+          We create a pipeline using neural network to for rigs and skinning of a 3D model in arbitrary poses based on their mesh and volumetric data.
+        </p> -->
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="https://diglib.eg.org/handle/10.2312/egs20211023">[PDF]</a>
+          <a href="https://github.com/whitealex95/autorigging-bipedal">[Code]</a>
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="https://diglib.eg.org/handle/10.2312/egs20211023">PDF</a> / 
-        <a href="https://github.com/whitealex95/autorigging-bipedal">Code</a>
       </div>
     </div>
 
 
     <!-- PUBLICATION ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
           <img src="assets/img/gca.gif">
-          </div>
         </div>
-      <div class="eight columns">
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">Learning to generate 3D shapes with Generative Cellular Automata</div>
-        <!-- AUTHORS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <br><em>Dongsu Zhang, Changwoon Choi, <strong>Jeonghwan Kim</strong>, Young Min Kim</em>
-        <br><em>International Conference on Learning Representations (ICLR) 2021</em>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
-        We train a generative 3D Cellular Automata that can generate and complete 3D data represented in Voxels.
+      </div>
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Learning to generate 3D shapes with Generative Cellular Automata</div>
+        <!-- AUTHORS + VENUE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <em>Dongsu Zhang, Changwoon Choi, <strong>Jeonghwan Kim</strong>, Young Min Kim</em>
+        <br><em><span class="venue">ICLR 2021</span></em>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <!-- <p class="project_info">
+          We train a generative 3D Cellular Automata that can generate and complete 3D data represented in Voxels.
+        </p> -->
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="https://openreview.net/forum?id=rABUmU3ulQh">[PDF]</a>
+          <a href="http://github.com/96lives/gca">[Code]</a>
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="https://openreview.net/forum?id=rABUmU3ulQh">PDF</a> / 
-        <a href="http://github.com/96lives/gca">Code</a>
-
       </div>
     </div>
     
@@ -271,95 +357,76 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <br><div class="div_line"></div><br>
-    <h5>Projects</h5>
+    <h5>Previous Projects</h5>
 
     <!-- PROJECT ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
           <img src="assets/img/mapfo.gif">
         </div>
       </div>
-      <div class="eight columns">
-        <!-- NEW TAG
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">Implementation of PPO for Multi-Agent Path Finding with Dynamic Obstacles</div>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Implementation of PPO for Multi-Agent Path Finding with Dynamic Obstacles</div>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p class="project_info">
           Efficient multi-agent path finding algorithm is essential for reducing cost when deploying robots to logoistics warehouses.
-          In this project, we train a Multi Agent variant of Proximal Policy Optimization(PPO) algorithm for multi agent path finding with dynamic obstacles.<br>
+          In this project, we train a Multi Agent variant of Proximal Policy Optimization(PPO) algorithm for multi agent path finding with dynamic obstacles.
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="assets/pdfs/MAPF_RLR.pdf">PDF</a>
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="assets/pdfs/MAPF_RLR.pdf">[PDF]</a>
+        </p>
       </div>
     </div>
 
 
     <!-- PROJECT ENTRY ###
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
           <img src="assets/img/Figure2_c.svg">
         </div>
       </div>
-      <div class="eight columns">
-        <!-- NEW TAG
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Stabilizing Controllers with Root Based Polynomial Regression</div>
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- <img src="assets/icons/new.png" style="width:24px; margin-bottom: -4px; margin-right: 2px; margin-left:-30px" alt="new"> -->
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">Stabilizing Controllers with Root Based Polynomial Regression</div>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
+        <p class="project_info">
           We propose a novel method of stabilizing classical controllers via techniques from machine learning.
           We use Polynomial Root Kernel(PRK) and Polynomial Root Gradients(PRG) to trained neural network to generate both discrete and continuous controllers satisfying root criterion stability.
           We successfully generated stabilizing feed-back controllers and parallel feed-forward compensator(PFC) along with unique application to Belgian chocolate problem.
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- <a href="pages/prgprk.html">[short-summary]</a> -->
-
       </div>
     </div>
 
     <!-- PROJECT ENTRY ###
       FETCHIT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="row" id="project_entry">
-      <!-- MEDIA SECTION
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-      <div class="four columns">
+    <div class="row video-row">
+      <!-- MEDIA SECTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <div class="three columns">
         <div class="video-container">
           <img src="assets/img/figure03.png">
         </div>
       </div>
-      <div class="eight columns">
-        <!-- NEW TAG
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <!-- TITLE
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <div id="project_title">Design and Control of Scalable Magnetic Levitation System with Deep Reinforcement Learning</div>
-        <!-- DESCRIPTION
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <p id="project_info">
+      <div class="nine columns text-column">
+        <!-- TITLE –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="project_title">Design and Control of Scalable Magnetic Levitation System with Deep Reinforcement Learning</div>
+        <!-- DESCRIPTION –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p class="project_info">
           We Model 3DoF levitating magnetic ball with 2D plane of electro magnets on MATLAB/Simulink.
           The three dimensional positional control of the levitating object was done via Deep Deterministic Policy Gradient (DDPG) algorithm.
         </p>
-          <!-- LINKS
-        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-        <a href="assets/pdfs/DeepRL_Report.pdf">PDF</a>
+        <!-- LINKS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <p>
+          <a href="assets/pdfs/DeepRL_Report.pdf">[PDF]</a>
+        </p>
       </div>
     </div>
   </div>
