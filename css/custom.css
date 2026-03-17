@@ -10,7 +10,8 @@ a {
 
 .photo {
   display: block;
-  width: 200px;      /* adjust to your size */
+  max-width: 200px;  /* cap at 200px but shrink on small screens */
+  width: 100%;
   height: auto;
 }
 
@@ -57,4 +58,17 @@ a {
 
 .venue {
   color: #606060;
+}
+
+/* ── Responsive: stack profile section nicely on narrow screens ── */
+@media (max-width: 750px) {
+  .photo-container {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .photo {
+    margin: 0 auto;
+  }
 }
