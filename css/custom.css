@@ -3,6 +3,25 @@ a {
   text-decoration: none;
 }
 
+/* ── Global typography: slightly smaller to fit more info ── */
+body {
+  font-size: 1.35em; /* skeleton default is 1.5em (15px) */
+}
+
+/* ── Narrower, centered content column (skeleton default is 980px) ── */
+.container {
+  max-width: 820px;
+}
+
+h5 {
+  font-size: 2.0rem !important; /* skeleton default is 2.4rem on desktop */
+}
+
+.intro-text {
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+}
+
 .photo-container {
   position: relative;
   display: inline-block;
@@ -10,7 +29,7 @@ a {
 
 .photo {
   display: block;
-  max-width: 200px;  /* cap at 200px but shrink on small screens */
+  max-width: 150px;  /* cap at 150px but shrink on small screens */
   width: 100%;
   height: auto;
 }
